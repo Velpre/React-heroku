@@ -1,0 +1,26 @@
+{
+  "name": "oppgave5",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "16.13.0",
+    "npm": "7.19.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm install --include=dev && npm run build",
+    "build:server": "cd server && npm install",
+    "format": "prettier --write **/*.{js,jsx,ts,tsx}",
+    "format:check": "prettier --check **/*.{js,jsx,ts,tsx}",
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}

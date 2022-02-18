@@ -1,0 +1,4 @@
+POST {{server}}/api/question/random
+
+###
+GET {{server}}/api/question/random
